@@ -24,9 +24,21 @@ const prev = document.querySelector("#prev");
 
 next.addEventListener("click", function() {
 
-    imageContainerArray[currentImage].classList.remove("d-block");
-    currentImage++;
-    imageContainerArray[currentImage].classList.add("d-block");
+    if (currentImage < images.length - 1) {
+            imageContainerArray[currentImage].classList.remove("d-block");
+            currentImage++;
+            imageContainerArray[currentImage].classList.add("d-block");
+        }
+    }
+);
+
+prev.addEventListener("click", function() {
+
+    if (currentImage > 0) {
+            imageContainerArray[currentImage].classList.remove("d-block");
+            currentImage--;
+            imageContainerArray[currentImage].classList.add("d-block");
+        }
     }
 );
 
