@@ -34,7 +34,7 @@ body {
 }
 
 #next {
-    right: 400px;
+    right: 300px;
 }
 
 #prev {
@@ -44,7 +44,7 @@ body {
 /********************************************/
 
 .container {
-    width: 800px;
+    width: 900px;
     margin-left: 350px;
 
 }
@@ -70,6 +70,7 @@ body {
 
 p {
     color: white;
+    padding: 1rem 0 0 1rem;
 }
 
 /********************************************/
