@@ -22,6 +22,10 @@ imageContainerArray[currentImage].classList.add("d-block");
 const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");
 
+
+
+/*  
+
 next.addEventListener("click", function() {
 
     if (currentImage < images.length - 1) {
@@ -41,4 +45,42 @@ prev.addEventListener("click", function() {
         }
     }
 );
+
+*/
+
+
+//Bonus 1 
+
+
+next.addEventListener("click", function() {
+
+    imageContainerArray[currentImage].classList.remove("d-block");
+    currentImage = (currentImage + 1) % images.length;
+    imageContainerArray[currentImage].classList.add("d-block"); 
+    }
+);
+
+prev.addEventListener("click", function() {
+
+    imageContainerArray[currentImage].classList.remove("d-block");
+    currentImage = (currentImage - 1 + images.length) % images.length;
+    imageContainerArray[currentImage].classList.add("d-block"); 
+    }
+);
+
+
+//Bonus auto assegnato
+
+document.addEventListener("keydown", function(event) {
+    if (event.code === "ArrowRight" && currentImage < images.length - 1) {
+        imageContainerArray[currentImage].classList.remove("d-block");
+        currentImage++;
+        imageContainerArray[currentImage].classList.add("d-block");
+    } else if (event.code === "ArrowLeft" && currentImage > 0) {
+        imageContainerArray[currentImage].classList.remove("d-block");
+        currentImage--;
+        imageContainerArray[currentImage].classList.add("d-block");
+    }
+});
+
 
