@@ -1,5 +1,14 @@
 /********************************************/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug .container {
+    background-color: green;
+}
 
 /********************************************/
 
@@ -7,7 +16,16 @@
 
 /********************************************/
 
+.container {
+    width: 800px;
+    margin: auto;
 
+}
+
+.carousel {
+    height: 600px;
+    margin-top: 3rem;
+} 
 
 /********************************************/
 
