@@ -24,7 +24,7 @@ const prev = document.querySelector("#prev");
 
 
 
-/*  
+/*  Esercizio base
 
 next.addEventListener("click", function() {
 
@@ -69,18 +69,19 @@ prev.addEventListener("click", function() {
 );
 
 
-//Bonus auto assegnato
+//Roba mia
 
 document.addEventListener("keydown", function(event) {
     if (event.code === "ArrowRight" && currentImage < images.length - 1) {
-        imageContainerArray[currentImage].classList.remove("d-block");
-        currentImage++;
-        imageContainerArray[currentImage].classList.add("d-block");
-    } else if (event.code === "ArrowLeft" && currentImage > 0) {
-        imageContainerArray[currentImage].classList.remove("d-block");
-        currentImage--;
-        imageContainerArray[currentImage].classList.add("d-block");
+            imageContainerArray[currentImage].classList.remove("d-block");
+            currentImage++;
+            imageContainerArray[currentImage].classList.add("d-block");
+        } else if (event.code === "ArrowLeft" && currentImage > 0) {
+            imageContainerArray[currentImage].classList.remove("d-block");
+            currentImage--;
+            imageContainerArray[currentImage].classList.add("d-block");
+        }
     }
-});
+);
 
 

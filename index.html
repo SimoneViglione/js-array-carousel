@@ -10,30 +10,56 @@
     <link href="css/style.css" rel="stylesheet"> 
 </head>
 
-<body class="debug">
+<body>
 
     <p>Nota: dovrebbe poter scorrere anche tramite le frecce della tastiera</p>
 
-    <div class="container">
-        <div class="carousel">
-            <div class="slider">
+    <div class="d-flex">
+        <div class="container">
+            <div class="carousel">
+                <div class="slider">
 
+                    <!--Inserire da JS-->
+
+                </div>
+
+                <div id="next" class="nav">
+                    <i class="fa-solid fa-angle-right nav_btn"></i>
+                </div>
+                
+                <div id="prev" class="nav">
+                    <i class="fa-solid fa-angle-left nav_btn"></i>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="small_container">
+            <div class="small_slider">
+                <img src="img/01.webp"/>
             </div>
 
+            <div class="small_slider">
+                <img src="img/02.webp"/>
+            </div>
+
+            <div class="small_slider">
+                <img src="img/03.webp"/>
+            </div>
+
+            <div class="small_slider">
+                <img src="img/04.webp"/>
+            </div>
+
+            <div class="small_slider">
+            <img src="img/05.webp"/>
+            </div>
         </div>
+
     </div>
-
-
-    <div id="next" class="nav">
-        <i class="fa-solid fa-angle-right nav_btn"></i>
-    </div>
-
-    <div id="prev" class="nav">
-        <i class="fa-solid fa-angle-left nav_btn"></i>
-    </div>
-
 
     
+
     <script type="text/javascript" src="js/main.js"></script> 
 </body>
 </html>

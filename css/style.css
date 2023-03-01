@@ -34,18 +34,22 @@ body {
 }
 
 #next {
-    right: 300px;
+    right: 20px;
 }
 
 #prev {
-    left: 360px;
+    left: 20px;
+}
+
+.d-flex {
+    display: flex;
 }
 
 /********************************************/
 
 .container {
     width: 900px;
-    margin-left: 350px;
+    margin-left: 250px;
 
 }
 
@@ -75,7 +79,20 @@ p {
 
 /********************************************/
 
+.small_container {
+    width: 150px;
+    margin-top: 100px;
+    margin-left: 1rem;
+}
 
+.small_slider {
+    height: 100px;
+}
+
+.small_slider img {
+    height: 100%;
+    width: 100%;
+}
 
 /********************************************/
 
